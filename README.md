@@ -131,13 +131,13 @@ root@rabbit2 : exit
 ### 3.3 미러링 구성하기
 1번 도커 컨테이너로 접속 후 아래 명령어 실행
 ~~~bash
-root@rabbit1 : rabbitmqctl -n rabbit1 set_policy act-policy "^ha\."  '{"ha-mode":"all"}'
+root@rabbit1 : rabbitmqctl -n rabbit1 set_policy act-policy "^cluster" '{"ha-mode":"all"}'
 ~~~
 
 ## 4. HA Proxy 구성
 3개의 노드로 구성된 클러스터를 구성하였지만
 클라이언트에서 해당 클러스터에 접근하기 위해서는 단일 진입점이 필요하다.
-그리고 만약 3개의 노드 중 어떠한 노드가 내려간 경우 클라이언트에서 죽은 노드로 요청을 보내면 실패가 일어나기 때문에 Load Balance를 통해 healt체크를 하기 위한 HA Proxy를 구성한다.
+그리고 만약 3개의 노드 중 어떠한 노드가 내려간 경우 클라이언트에서 죽은 노드로 요청을 보내면 실패가 일어나기 때문에 Load Balance를 통해 health체크를 하기 위한 HA Proxy를 구성한다.
 
 ### 4.1 HA Proxy 설치 및 설정
 설치
