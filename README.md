@@ -12,8 +12,8 @@ virtual hosts, exchanges, users, permissions은 모든 노드에 자동으로 �
   * 35672~35682 - 노드와의 통신을 위해 CLI 도구에서 사용되는 포트
   * 61613, 61614 : TLS가 있거나 없는 STOMP 클라이언트 (STOMP 플러그인이 활성화 된 경우에만 해당)
   * 1883, 8883 : (MQTT 플러그인이 사용 가능한 경우 TLS가없는 MQTT 클라이언트
-    * 15674 : STOMP-over-WebSockets 클라이언트 (웹 STOMP 플러그인이 사용 가능한 경우에만)
-    * 15675 : WebTockets-over-WebSockets 클라이언트 (Web MQTT 플러그인이 사용 가능한 경우에만)
+  * 15674 : STOMP-over-WebSockets 클라이언트 (웹 STOMP 플러그인이 사용 가능한 경우에만)
+  * 15675 : WebTockets-over-WebSockets 클라이언트 (Web MQTT 플러그인이 사용 가능한 경우에만)
 
 ## 2. 클러스터 구성하기 (일반 설치)
 본 예제는 총 3개의 노드를 이용하여 클러스터를 구성한다.
