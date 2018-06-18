@@ -40,6 +40,10 @@ $ RABBITMQ_NODE_PORT=5674 RABBITMQ_SERVER_START_ARGS="-rabbitmq_management liste
 $ ./rabbitmq3/sbin/rabbitmq-plugins -n rabbit3 enable rabbitmq_management
 $ ./rabbitmq3/sbin/rabbitmqctl -n rabbit3 start_app
 ~~~
+위와 같이 실행시에 포트와 같은 환경 설정을 주기 싫을 경우 /etc/rabbitmq 폴더 밑의 환경 설정 파일을 수정한다.
+해당 설정 파일에서 포트 뿐만 아니라 로그 디렉토리 경로 등도 수정이 가능하니 자세한 것은 아래 링크를 참조한다.
+[link to RabbitMQ Configuration!](https://www.rabbitmq.com/configure.html)
+
 
 localhost:15672/15673/15674에 접속하여 guest/guest로 확인
 
